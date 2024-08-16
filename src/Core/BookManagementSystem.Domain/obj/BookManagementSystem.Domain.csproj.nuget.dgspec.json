@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\obj\\",
+=======
+    "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectName": "BookManagementSystem.Domain",
+        "projectPath": "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\obj\\",
+>>>>>>> c824bb207851b3afec28ef764da22c544920df5f
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

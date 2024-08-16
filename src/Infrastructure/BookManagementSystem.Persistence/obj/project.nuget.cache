@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "th+XbkBvW2SIh6x0BKxj+5JWqXSZUZB6WPOCiLlqR/p0SUhDljh9umb3JvfkHEalaIsVlsmS232I9XXyYWO/lQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
@@ -53,5 +54,11 @@
     "C:\\Users\\User\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "kEhu0WqbwCj8KyOFgy8KrXTr3OFsV9/dyMMY9S+B6w7zUx1Z8EQJxhvTZwGmpbOmU3DGcj0JmAXKnRRxWWEJkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> c824bb207851b3afec28ef764da22c544920df5f
   "logs": []
 }

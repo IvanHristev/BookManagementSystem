@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "HDovYtT2k23P3+jq57I3BPyuCOk8bIFIw6bmLozbHueKUw6kKEzlNcQVFaO+aqMqhn3rU6d+2Sqs5VuLMRA9Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
@@ -45,5 +46,11 @@
     "C:\\Users\\User\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "yCYDUTcHI5mn05q115Jk7abDxkPDO6LGycuQVgQyHADJXGx6z4tsQ2UCyZByUl/7NjE9/shVn1Ff+XhXcELlfw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Нова папка (2)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> c824bb207851b3afec28ef764da22c544920df5f
   "logs": []
 }
