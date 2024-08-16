@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.Domain.Entities;
+using BookManagementSystem.Application.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,11 @@ namespace BookManagementSystem.Application.Interfaces
 {
     public interface IBookService
     {
-        Book GetById(int bookId);
-        IEnumerable<Book> GetAll();
-        void Add(Book book);
-        void Update(Book book);
-        void Delete(int bookId);
+        Book GetBookById(int bookId);
+        IEnumerable<Book> GetAllBooks();
+        void CreateBook(BookCreateDto book);
+        void UpdateBook(Book book);
+        void DeleteBook(int bookId);
+
     }
 }

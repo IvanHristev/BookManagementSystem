@@ -11,50 +11,53 @@ namespace BookManagementSystem.Persistence.Repositories
 {
     public class BookRepository : IBookRepository
     {
-        private List<Book> _books = new List<Book>();
+        private readonly BookContext _context;
 
         public void Add(Book book)
         {
-            _books.Add(book);
+            _context.Books.Add(book);
+            _context.SaveChanges();
         }
 
         public void Delete(int bookId)
         {
-           Book book = GetById(bookId);
+            var book = _context.Books.SingleOrDefault(x => x.BookId == bookId);
             if (book != null)
             {
-                throw new Exception("This book does not exist");
+                _context.Books.Remove(book);
             }
             else
             {
-                _books.Remove(book);
+                throw new Exception("This book does not exist");
             }
+            _context.SaveChanges();
         }
 
         public IEnumerable<Book> GetAll()
         {
-            return _books;
+            return _context.Books;
         }
 
         public Book GetById(int bookId)
         {
-            return _books.SingleOrDefault(x => x.BookId == bookId);
+            return _context.Books.SingleOrDefault(x => x.BookId == bookId);
         }
 
         public void Update(Book book)
         {
-            var existingBook = GetById(book.BookId);
+            var existingBook = _context.Books.SingleOrDefault(x => x.BookId == bookId);
             if (existingBook != null)
-            {
-                throw new Exception("This book does not exist");
-            }
-            else
             {
                 existingBook.PublishDate = book.PublishDate;
                 existingBook.PublisherId = book.PublisherId;
                 existingBook.Genre = book.Genre;
                 existingBook.Title = book.Title;
             }
+            else
+            {
+                throw new Exception("This book does not exist");
+            }
+            _context.SaveChanges();
         }
 
         private int GenerateBookId() => this.GetAll().Count() + 1;

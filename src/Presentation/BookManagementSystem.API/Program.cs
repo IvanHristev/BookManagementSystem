@@ -1,6 +1,11 @@
+using BookManagementSystem.Persistence;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddDbContext<BookContext>(
+        o => o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")));
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

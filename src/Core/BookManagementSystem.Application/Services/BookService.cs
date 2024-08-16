@@ -1,4 +1,5 @@
-﻿using BookManagementSystem.Application.Interfaces;
+﻿using BookManagementSystem.Application.Dtos;
+using BookManagementSystem.Application.Interfaces;
 using BookManagementSystem.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,29 +17,38 @@ namespace BookManagementSystem.Application.Services
             _bookRepository = bookRepository;
         }
 
-        public void Add(Book book)
+        public void CreateBook(BookCreateDto bookDto)
         {
+            var book = new Book
+            {
+                //BookId = GenerateBookId(),
+                Title = bookDto.Title,
+                Genre = bookDto.Genre,
+                PublishDate = bookDto.PublishDate,
+                PublisherId = bookDto.PublisherId
+            };
             _bookRepository.Add(book);
         }
 
-        public void Delete(int id)
+        public void DeleteBook(int id)
         {
             _bookRepository.Delete(id);
         }
 
-        public IEnumerable<Book> GetAll()
+        public IEnumerable<Book> GetAllBooks()
         {
             return _bookRepository.GetAll();
         }
 
-        public Book GetById(int id)
+        public Book GetBookById(int id)
         {
             return _bookRepository.GetById(id);
         }
 
-        public void Update(Book book)
+        public void UpdateBook(Book book)
         {
             _bookRepository.Update(book);
         }
+        //private int GenerateBookId() => _bookRepository.GetAll().Count() + 1;
     }
 }
