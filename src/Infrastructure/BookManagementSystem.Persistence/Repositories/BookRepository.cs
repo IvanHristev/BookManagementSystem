@@ -45,7 +45,7 @@ namespace BookManagementSystem.Persistence.Repositories
 
         public void Update(Book book)
         {
-            var existingBook = _context.Books.SingleOrDefault(x => x.BookId == bookId);
+            var existingBook = _context.Books.SingleOrDefault(x => x.BookId == book.BookId);
             if (existingBook != null)
             {
                 existingBook.PublishDate = book.PublishDate;

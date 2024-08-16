@@ -2728,23 +2728,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
       "projectName": "BookManagementSystem.API",
-      "projectPath": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2753,21 +2753,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj"
+            "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj"
             },
-            "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
+            "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
             },
-            "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj"
+            "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Infrastructure\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj"
             }
           }
         }
