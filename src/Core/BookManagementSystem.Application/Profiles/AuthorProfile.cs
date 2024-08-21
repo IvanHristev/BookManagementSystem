@@ -24,15 +24,8 @@ namespace BookManagementSystem.Application.Profiles
             CreateMap<Publisher, PublisherCreateDto>().ReverseMap();
             CreateMap<Book, AuthorBookDto>();
 
-            CreateMap<Author, AuthorDto>().ReverseMap();
-
-            CreateMap<AuthorDto, Author>().ReverseMap();
-
             CreateMap<Author, AuthorDto>()
                 .ForMember(dest => dest.BirthDay, opt => opt.MapFrom(src => src.DateOfBirth)).ReverseMap();
-
-            CreateMap<AuthorDto, Author>()
-                .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.BirthDay)).ReverseMap();
 
             CreateMap<Publisher, PublisherCreateDto>().ReverseMap();
             CreateMap<Publisher, PublisherUpdateDto>().ReverseMap();
