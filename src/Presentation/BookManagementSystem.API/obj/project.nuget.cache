@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9IaC6nb/EXw8y+ZEk44miJeAKMCbqGodmV4nKWSNsRFDNMkbv/z1QxdCx0ldZTbwAlp226k6J+q0aTfoEloFQg==",
+  "dgSpecHash": "iH7gwSptcYSl4dOmyi/XbGRxoSzCdjlO6MNZdmoAT5Huq7A897VpuD4EZ3sAf+clClQcuI0RnPAswT6DTBBwOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Presentation\\BookManagementSystem.API\\BookManagementSystem.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

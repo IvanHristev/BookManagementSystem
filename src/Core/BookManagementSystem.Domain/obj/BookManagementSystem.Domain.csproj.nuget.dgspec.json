@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
+    "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+    "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "projectName": "BookManagementSystem.Domain",
-        "projectPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Нова папка (4)\\BookManagementSystem\\src\\Core\\BookManagementSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -48,7 +48,19 @@
               "target": "Package",
               "version": "[6.0.33, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.33, )"
             }

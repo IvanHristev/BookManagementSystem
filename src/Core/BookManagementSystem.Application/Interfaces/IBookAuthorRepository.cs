@@ -9,9 +9,9 @@ namespace BookManagementSystem.Application.Interfaces
 {
     public interface IBookAuthorRepository
     {
-        BookAuthor GetById(int bookId, int authorId);
         IEnumerable<BookAuthor> GetAll();
-        void Add(Book book, Author author);
-        void Delete(int bookId, int authorId);
+        void Add(BookAuthor bookAuthor);
+        void DeleteByAuthorId(int artistId);
+        void DeleteByBookId(int bookId);
     }
 }

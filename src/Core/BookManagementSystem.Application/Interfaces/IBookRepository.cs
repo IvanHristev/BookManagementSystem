@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookManagementSystem.Application.Dtos.BookDtos;
 
 namespace BookManagementSystem.Application.Interfaces
 {
@@ -11,7 +12,8 @@ namespace BookManagementSystem.Application.Interfaces
     {
         Book GetById(int bookId);
         IEnumerable<Book> GetAll();
-        void Add(Book book);
+        IEnumerable<Author> GetAuthorsByBookId(int bookId);
+        void Create(Book book);
         void Update(Book book);
         void Delete(int bookId);
     }

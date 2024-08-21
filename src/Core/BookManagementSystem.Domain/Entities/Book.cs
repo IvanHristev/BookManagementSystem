@@ -11,15 +11,13 @@ namespace BookManagementSystem.Domain.Entities
     {
         [Key]
         public int BookId { get; set; }
-        [Required]
-        [MaxLength(50)]
         public string Title { get; set; }
-        [Required]
-        [MaxLength(20)]
         public string Genre { get; set; }
-        [Required]
         public DateOnly PublishDate { get; set; }
-        [Required]
         public int PublisherId { get; set; }
+
+        Book book { get; set; }
+        public Publisher Publisher { get; set; }
+        public ICollection<BookAuthor> BookAuthors { get; set; } = new List<BookAuthor>();
     }
 }

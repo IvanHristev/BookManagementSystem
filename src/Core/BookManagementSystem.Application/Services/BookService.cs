@@ -1,4 +1,6 @@
-﻿using BookManagementSystem.Application.Dtos;
+﻿using AutoMapper;
+using BookManagementSystem.Application.Dtos.BookDtos;
+using BookManagementSystem.Application.Dtos.eDtos;
 using BookManagementSystem.Application.Interfaces;
 using BookManagementSystem.Domain.Entities;
 using System;
@@ -12,43 +14,46 @@ namespace BookManagementSystem.Application.Services
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
-        public BookService(IBookRepository bookRepository)
+        private readonly IMapper _mapper;
+        public BookService(IBookRepository bookRepository, IMapper mapper)
         {
             _bookRepository = bookRepository;
+            _mapper = mapper;
         }
 
         public void CreateBook(BookCreateDto bookDto)
         {
-            var book = new Book
-            {
-                //BookId = GenerateBookId(),
-                Title = bookDto.Title,
-                Genre = bookDto.Genre,
-                PublishDate = bookDto.PublishDate,
-                PublisherId = bookDto.PublisherId
-            };
-            _bookRepository.Add(book);
+            var book = new Book();
+            book = _mapper.Map<Book>(bookDto);
+            _bookRepository.Create(book);
         }
 
-        public void DeleteBook(int id)
+        public void DeleteBook(int bookid)
         {
-            _bookRepository.Delete(id);
+            _bookRepository.Delete(bookid);
         }
 
-        public IEnumerable<Book> GetAllBooks()
+        public IEnumerable<BookGetDto> GetAllBooks()
         {
-            return _bookRepository.GetAll();
+            var books = _bookRepository.GetAll();
+            return _mapper.Map<IEnumerable<BookGetDto>>(books);
+        }
+        public IEnumerable<BookAuthorDto> GetAuthorsByBookId(int bookId)
+        {
+            IEnumerable<Author> authors = _bookRepository.GetAuthorsByBookId(bookId);
+            return _mapper.Map<IEnumerable<BookAuthorDto>>(authors);
         }
 
-        public Book GetBookById(int id)
+        public BookGetDto GetBookById(int id)
         {
-            return _bookRepository.GetById(id);
+            Book book = _bookRepository.GetById(id);
+            return _mapper.Map<BookGetDto>(book);
         }
 
-        public void UpdateBook(Book book)
+        public void UpdateBook(int bookId, BookUpdateDto book)
         {
-            _bookRepository.Update(book);
+            Book updatedBook = _mapper.Map<Book>(book);
+            _bookRepository.Update(updatedBook);
         }
-        //private int GenerateBookId() => _bookRepository.GetAll().Count() + 1;
     }
 }

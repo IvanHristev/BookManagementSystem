@@ -5,13 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookManagementSystem.Application.Dtos
+namespace BookManagementSystem.Application.Dtos.AuthorDtos
 {
-    public class AuthorCreateDto
+    public abstract class AuthorDto
     {
+        [Required]
+        [MaxLength(15)]
         public string FirstName { get; set; }
+        [Required]
+        [MaxLength(15)]
         public string LastName { get; set; }
-        public DateOnly DateOfBirth { get; set; }
+        [Required]
+        public DateOnly BirthDay { get; set; }
+        [Required]
+        [MaxLength(200)]
         public string Biography { get; set; }
     }
 }

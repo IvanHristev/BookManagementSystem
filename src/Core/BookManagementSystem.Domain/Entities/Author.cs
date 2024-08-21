@@ -12,16 +12,14 @@ namespace BookManagementSystem.Domain.Entities
         
         [Key]
         public int AuthorId { get; set; }
-        [Required]
-        [MaxLength(15)]
         public string FirstName { get; set; }
-        [Required]
-        [MaxLength(15)]
         public string LastName { get; set; }
-        [Required]
         public DateOnly DateOfBirth { get; set; }
-        [Required]
-        [MaxLength(200)]
         public string Biography { get; set; }
+
+        public Author author { get; set; }
+        public ICollection<Publisher> Publishers { get; set; }
+        public ICollection<Book> Books { get; set;}
+        public ICollection<BookAuthor> BookAuthors { get; set;}
     }
 }

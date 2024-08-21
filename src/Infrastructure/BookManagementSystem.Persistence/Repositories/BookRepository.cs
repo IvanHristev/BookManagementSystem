@@ -1,19 +1,22 @@
 ﻿using BookManagementSystem.Application.Interfaces;
 using BookManagementSystem.Domain.Entities;
+using BookManagementSystem.Application.Dtos.BookDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
+using BookManagementSystem.Persistence.DB;
 
 namespace BookManagementSystem.Persistence.Repositories
 {
     public class BookRepository : IBookRepository
     {
-        private readonly BookContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public void Add(Book book)
+        public void Create(Book book)
         {
             _context.Books.Add(book);
             _context.SaveChanges();
@@ -38,6 +41,12 @@ namespace BookManagementSystem.Persistence.Repositories
             return _context.Books;
         }
 
+        public IEnumerable<Author> GetAuthorsByBookId(int bookId)
+        {
+            return _context.Authors
+                .Include(b => b.BookAuthors)
+                .Where(u => u.BookAuthors.Any(c => c.BookId == bookId));
+        }
         public Book GetById(int bookId)
         {
             return _context.Books.SingleOrDefault(x => x.BookId == bookId);
@@ -60,6 +69,5 @@ namespace BookManagementSystem.Persistence.Repositories
             _context.SaveChanges();
         }
 
-        private int GenerateBookId() => this.GetAll().Count() + 1;
     }
 }
